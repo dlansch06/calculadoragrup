@@ -2,10 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=p, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Grupal</title> <link rel="stylesheet" href="style.css"> </head>
 <body>
+
+    <div class="calculator"> <h3>Calculadora Grupal</h3>
+        
+        <input type="text" class="display" id="display" readonly> 
+        
+        <div class="buttons"> <button class="btn clear" onclick="clearDisplay()">C</button>
+            <button class="btn operator" onclick="appendToDisplay('/')">/</button>
+            <button class="btn operator" onclick="appendToDisplay('*')">*</button>
+            <button class="btn operator" onclick="appendToDisplay('-')">-</button>
+            
+            <button class="btn number" onclick="appendToDisplay('7')">7</button>
+            <button class="btn number" onclick="appendToDisplay('8')">8</button>
+            <button class="btn number" onclick="appendToDisplay('9')">9</button>
+            <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+            
+            <button class="btn number" onclick="appendToDisplay('4')">4</button>
+            <button class="btn number" onclick="appendToDisplay('5')">5</button>
+            <button class="btn number" onclick="appendToDisplay('6')">6</button>
+            <button class="btn equals" onclick="calculateResult()">=</button>
+            
+            <button class="btn number" onclick="appendToDisplay('1')">1</button>
+            <button class="btn number" onclick="appendToDisplay('2')">2</button>
+            <button class="btn number" onclick="appendToDisplay('3')">3</button>
+            
+            <button class="btn number zero" onclick="appendToDisplay('0')">0</button>
+            <button class="btn decimal" onclick="appendToDisplay('.')">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perspiciatis minus quasi. Corrupti repellendus magnam harum dignissimos adipisci perferendis, unde temporibus, expedita tenetur illo est iusto saepe, totam natus accusamus.</p>
+
 </body>
 </html>
